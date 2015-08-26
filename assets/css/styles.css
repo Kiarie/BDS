@@ -364,10 +364,17 @@ section.about .card{
     height: 300px;
     width: 200px;
     min-width: 200px;
-    
-    
 }
-
+section.about .desc{
+    transform: translate3d(-550px, 0 , 0);
+    opacity: 0;
+    width: 80%;
+    min-width: 400px;
+    min-height: 250px;
+    background: rgba(0,0,0,.1);
+    display: block;
+    position: absolute;
+}
 .page5
 {
     background: #f1f3f4;
