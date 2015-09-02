@@ -22,17 +22,37 @@ section.about .desc:nth-of-type(2){
 section.about .desc:nth-of-type(3){
     transition-delay:1.2s;
 }   
-section.about .one:hover ~ .desc-one{
+section.about .one:hover .desc-one{
+        transition: transform 0.9s, opacity 1.2s;
+        transform:translate3d(0,0,0) rotateY(360deg);
+        opacity: 1;
+    }
+section.about .two:hover .desc-two{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0);
         opacity: 1;
     }
-section.about .two:hover ~ .desc-two{
+section.about .three:hover .desc-three{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0);
         opacity: 1;
     }
-section.about .three:hover ~ .desc-three{
+section.about .three:hover .desc-three{
+        transition: transform 0.9s, opacity 1.2s;
+        transform:translate3d(0,0,0);
+        opacity: 1;
+    }
+section.about .four:hover .desc-four{
+        transition: transform 0.9s, opacity 1.2s;
+        transform:translate3d(0,0,0);
+        opacity: 1;
+    }
+ section.about .five:hover .desc-five{
+        transition: transform 0.9s, opacity 1.2s;
+        transform:translate3d(0,0,0);
+        opacity: 1;
+    }
+ section.about .Six:hover .desc-six{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0);
         opacity: 1;
