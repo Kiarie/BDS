@@ -224,13 +224,15 @@ section.services
     /* z-index: -1000; */
     display: block;
     background-color: #8d81ac;/*#4F5B67;*/
-    background: url("../../img/hero-bg.jpg");
+    background: url("../../img/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-size-adjust:auto;
+    min-height: 800px;
   /*  position: relative;*/
-    width: 100%;
-    height: 800px;
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 1075px;
+    max-width: 1500px;
     text-align: center;
 }
 
@@ -255,7 +257,7 @@ section.services .plan
 {
     display: inline-block;
     vertical-align: top;
-    width:200px;
+    max-width:200px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 0;
     min-height: 250px;
@@ -341,7 +343,7 @@ section.about
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
-    height: 800px;
+    min-height: 800px;
     width: 100%;
     max-width: 1075px;
 }
@@ -364,9 +366,10 @@ section.about .card{
     height: 300px;
     width: 300px;
     min-width: 200px;
+    transform: rotateY(0);
 }
 section.about .card .desc{
-    transform: translate3d(-550px, 0 , 0);
+    transform: translate3d(-1550px, 0 , 0) rotateZ(0);
     opacity: 0;
     width: 270px;
     min-width: 200px;
