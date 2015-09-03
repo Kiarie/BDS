@@ -335,6 +335,25 @@ section.services .btn:hover
 {
     background: rgba(255, 255, 255, 0.4);
 }
+/*-------------------ABOUT US-------------------------*/
+section.aboutus{
+    display: block;
+    background: url("../../img/img2.jpg") no-repeat;
+    background-color: #4F5B67;
+    background-size: cover;
+    padding: 5em 2em 5em;
+    word-wrap:break-word;
+    text-align: center;
+    line-height: 1.5em;
+}
+section.aboutus h2{
+    margin: 0;
+    line-height: 1.5em;
+
+}
+
+
+
 /*-------------------ABOUT SECTION--------------------*/
 section.about
 {
