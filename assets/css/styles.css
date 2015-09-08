@@ -338,17 +338,32 @@ section.services .btn:hover
 /*-------------------ABOUT US-------------------------*/
 section.aboutus{
     display: block;
-    background: url("../../img/img2.jpg") no-repeat;
-    background-color: #4F5B67;
-    background-size: cover;
+    background: url("../../img/symphony.png");
+   /* background-color: #4F5B67;*/
+   /* background-size: cover;*/
     padding: 5em 2em 5em;
+    height:500px;
     word-wrap:break-word;
     text-align: center;
     line-height: 1.5em;
+    top: 0px;
+    bottom: 0px;
 }
 section.aboutus h2{
     margin: 0;
     line-height: 1.5em;
+
+}/*
+section.about h2::after{
+    content: '';
+    height: 0.5px;
+    background-color: #ccc;
+    width:50%;
+    float:left;
+    left: 20%;
+    text-align: center;
+    margin:0;
+    padding: 1px;
 
 }
 
@@ -357,14 +372,13 @@ section.aboutus h2{
 /*-------------------ABOUT SECTION--------------------*/
 section.about
 {
+    background: url("../../img/seamless.png");
     display: block;
     font-size-adjust: auto;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 5%;
     min-height: 800px;
     width: 100%;
-    max-width: 1075px;
 }
 
 section.about h2{
@@ -388,7 +402,7 @@ section.about .card{
     transform: rotateY(0);
 }
 section.about .card .desc{
-    transform: translate3d(-1550px, 0 , 0) rotateZ(0);
+    transform: rotateZ(0);
     opacity: 0;
     width: 270px;
     min-width: 200px;
