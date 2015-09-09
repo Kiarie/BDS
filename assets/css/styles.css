@@ -48,6 +48,16 @@ h1
     margin-bottom: 0.33em;
     color: aliceblue;
 }
+nav.top{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 40px;
+    padding: 10px;
+    line-height: 1.5em;
+    background: rgba(0,0,0,.5);
+
+}
 /*
 span
 {
@@ -122,7 +132,6 @@ p a:hover
     border: 3px solid #fff;
     background: none;
 }
-
 .button-blue
 {
     border-radius: 20px;
@@ -143,7 +152,7 @@ p a:hover
     transition: all 0.2s ease-in-out;;
 }
 
-.button-blue: hover
+.button-blue:hover
 {
     color: #74bee1;
     border: 3px solid #74bee1;
