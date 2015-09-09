@@ -52,10 +52,32 @@ nav.top{
     width: 100%;
     position: fixed;
     top: 0;
-    height: 40px;
+    height: 60px;
     padding: 10px;
     line-height: 1.5em;
-    background: rgba(0,0,0,.5);
+    background: rgba(116,190,225,.75);
+    color: #FBFBFB;
+    vertical-align: top;
+
+}
+nav a{
+    display: inline-block;
+    height: auto;
+    width:80px;
+    padding: 10px;
+    margin: 0 10px;
+}
+nav img{
+    height: 70px;
+    width: auto;
+}
+nav.top .naav{
+    float: right;
+}
+p{
+    text-decoration: none;
+    text-align: justify;
+    padding: 10px;
 
 }
 /*
@@ -238,19 +260,21 @@ section.services
     background-position: center center;
     font-size-adjust:auto;
     min-height: 800px;
-  /*  position: relative;*/
+  /*  position: relative;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 10%;*/
+    width: 100%;
     max-width: 1500px;
     text-align: center;
 }
 
 section.services .about-tables
-{
+{   
+    display: block;
     padding: 0 7px 25px;
     font-size: 0;
     letter-spacing: -4px;
-    white-space: nowrap;
+   /* white-space: nowrap; causes elements to display elements horizontally no matter resize*/
     text-align: center;
 }
 
@@ -269,6 +293,7 @@ section.services .plan
     max-width:200px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 0;
+    height: 250px;
     min-height: 250px;
     margin: 50px 30px;
     padding: 20px 10px 35px;
@@ -401,7 +426,7 @@ section.about h2{
 section.about .card{
     display: inline-block;
     vertical-align: top;
-    background: rgba(255,0,0,.1);
+    background: rgba(116,0,0,.1);
     min-height: 250px;
     margin: 10px 10px;
     padding: 20px 10px 35px;
@@ -721,11 +746,18 @@ is-visible .modal-anim-three
     
     .page1 .button-white {display: none;}
     
-    h2 {font-size: 42px;}
+    h2 {font-size: 22px;}
     
-    h3 {font-size: 32px;}
+    h3 {font-size: 22px;}
     
     #logo {display: none;}
+    nav.top{
+        height: 70px;
+        width: 100%;
+        position: relative;
+     }
+     nav a{width: auto;}
+     nav img{height: 60px; width:auto;}
     
     h1 {font-size: 30px;}
     
@@ -770,6 +802,10 @@ and (orientation : portrait) {
         height: auto;
         opacity: 1;
     }
+    nav{
+        width: 100%;
+        position: relative;
+     }
     
     .row .six.columns, .row .four.columns
     {
