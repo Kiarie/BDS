@@ -55,5 +55,5 @@ section.about .four:hover .desc-four{
         opacity: 1;
     }
  section.services .plan:hover{
- 	transform:scale(1.2);
+ 	transform:scale(1.25);
  }
