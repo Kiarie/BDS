@@ -54,3 +54,6 @@ section.about .four:hover .desc-four{
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
     }
+ section.services .plan:hover{
+ 	transform:scale(1.2);
+ }

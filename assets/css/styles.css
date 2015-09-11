@@ -48,6 +48,9 @@ h1
     margin-bottom: 0.33em;
     color: aliceblue;
 }
+h1.bracket{
+    font-family: Gudea, Arial, sans-serif,serif;
+}
 nav.top{
     width: 100%;
     position: fixed;
@@ -55,7 +58,8 @@ nav.top{
     height: 60px;
     padding: 10px;
     line-height: 1.5em;
-    background: rgba(116,190,225,.75);
+    background: rgba(116,190,225,1);
+    border-bottom: 0.5px solid #e5e5e5;
     color: #FBFBFB;
     vertical-align: top;
 
@@ -78,6 +82,7 @@ p{
     text-decoration: none;
     text-align: justify;
     padding: 10px;
+    margin-bottom: 0;
 
 }
 /*
@@ -301,6 +306,7 @@ section.services .plan
     letter-spacing: 0;
     white-space: normal;
     text-align: center;
+    tranform:scale(0);
    
 }
 
@@ -456,7 +462,25 @@ section.about .card .desc{
 {
     font-size: 240px;
 }
+section.we-do{
+    top:80;
+    padding: 20%;
+    padding-top: 80px;
+    padding-bottom: 10px;
 
+}
+
+section.we-do td{
+    /*display: inline-block; causes to spill to next line*/
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #ccc;
+    padding-right: 20px;
+    min-width: 10em;
+    vertical-align: top;
+}
+section.we-do td.one{
+    width: 20%;
+}
 section.contact
 {
     background: #021C35;
