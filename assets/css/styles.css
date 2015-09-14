@@ -416,9 +416,11 @@ section.about
     display: block;
     font-size-adjust: auto;
     text-align: center;
-    padding-top: 5%;
+    padding: 20%;
+    padding-top: 20px;
+    padding-bottom: 10px;
     min-height: 800px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 section.about h2{
@@ -430,27 +432,32 @@ section.about h2{
     font-family: sans-serif;
 }
 section.about .card{
-    display: inline-block;
     vertical-align: top;
     background: rgba(116,0,0,.1);
     min-height: 250px;
     margin: 10px 10px;
     padding: 20px 10px 35px;
-    height: 300px;
-    width: 300px;
-    min-width: 200px;
-    transform: rotateY(0);
+    min-height: 300px;
+    min-width: 300px;
+      /*  max-width: 80%;
+    transform: rotateY(0);*/
 }
 section.about .card .desc{
-    transform: rotateZ(0);
+    transform: translateX(-500px);
+    font-size-adjust: auto;
     opacity: 0;
-    width: 270px;
     min-width: 200px;
     min-height: 150px;
     background: rgba(0,0,0,.1);
-    display: block;
     position: absolute;
     padding: 10px;
+    width: 70%;
+    white-space: normal;
+}
+section.about .card .img, .desc{
+     display: block;
+    float: left;
+    top:0;
 }
 .page5
 {

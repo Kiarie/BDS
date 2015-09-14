@@ -14,45 +14,52 @@
 .animated.wiggle{-webkit-animation-duration:.75s;-moz-animation-duration:.75s;-o-animation-duration:.75s;animation-duration:.75s}
 section.about .card:hover{
 	transition: transform 1.2s;
-	transform: rotateY(360deg);
+	/*transform: rotateY(360deg);*/
 }
 section.about .desc{
     transition-delay:2.2s;
 }  
 section.about .one:hover .desc-one{
         transition: transform 0.9s, opacity 1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
+        transform:translateX(0);
         opacity: 1;
+        position: relative;
     }
 section.about .two:hover .desc-two{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
+        position: relative;
     }
 section.about .three:hover .desc-three{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
+        position: relative;
     }
 section.about .three:hover .desc-three{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
+        position: relative;
     }
 section.about .four:hover .desc-four{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
+        position: relative;
     }
  section.about .five:hover .desc-five{
         transition: transform 0.9s, opacity 1.2s;
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
+        position: relative;
     }
  section.about .Six:hover .desc-six{
-        transition: transform 0.9s, opacity 1.2s;
+        transition: transform 0.9s, opacity 1.2s, position:1.2s;
         transform:translate3d(0,0,0) rotateZ(360deg);
         opacity: 1;
+        position: relative;
     }
  section.services .plan:hover{
  	transform:scale(1.25);
