@@ -19,48 +19,33 @@ section.about .card:hover{
 section.about .desc{
     transition-delay:2.2s;
 }  
-section.about .one:hover .desc-one{
-        transition: transform 0.9s, opacity 1.2s;
-        transform:translateX(0);
-        opacity: 1;
-        position: relative;
+figure.one:hover .desc-one{
+	transform: translate3d(0,0,0);
+	opacity: 1;
     }
-section.about .two:hover .desc-two{
-        transition: transform 0.9s, opacity 1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
-        opacity: 1;
-        position: relative;
+figure.two:hover .desc-two{
+	transform: translate3d(0,0,0);
+	opacity: 1;
     }
-section.about .three:hover .desc-three{
-        transition: transform 0.9s, opacity 1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
-        opacity: 1;
-        position: relative;
+figure.three:hover .desc-three{
+	transform: translate3d(0,0,0);
+	opacity: 1;
+	}
+figure.four:hover .desc-four{
+	transform: translate3d(0,0,0);
+	opacity: 1;
     }
-section.about .three:hover .desc-three{
-        transition: transform 0.9s, opacity 1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
-        opacity: 1;
-        position: relative;
+figure.five:hover .desc-five{
+	transform: translate3d(0,0,0);
+	opacity: 1;
     }
-section.about .four:hover .desc-four{
-        transition: transform 0.9s, opacity 1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
-        opacity: 1;
-        position: relative;
+figure.Six:hover .desc-six{
+	transform: translate3d(0,0,0);
+	opacity: 1;
     }
- section.about .five:hover .desc-five{
-        transition: transform 0.9s, opacity 1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
-        opacity: 1;
-        position: relative;
-    }
- section.about .Six:hover .desc-six{
-        transition: transform 0.9s, opacity 1.2s, position:1.2s;
-        transform:translate3d(0,0,0) rotateZ(360deg);
-        opacity: 1;
-        position: relative;
-    }
+section.about .desc:hover{
+	transform: translate3d(0,0,0);
+}
  section.services .plan:hover{
  	transform:scale(1.25);
  }

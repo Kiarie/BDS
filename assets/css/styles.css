@@ -416,7 +416,7 @@ section.about
     display: block;
     font-size-adjust: auto;
     text-align: center;
-    padding: 20%;
+    padding: 10%;
     padding-top: 20px;
     padding-bottom: 10px;
     min-height: 800px;
@@ -432,27 +432,37 @@ section.about h2{
     font-family: sans-serif;
 }
 section.about .card{
+    display: inline-block;
     vertical-align: top;
-    background: rgba(116,0,0,.1);
+    background: rgba(208,245,245,.4);
     min-height: 250px;
     margin: 10px 10px;
     padding: 20px 10px 35px;
     min-height: 300px;
     min-width: 300px;
+    max-width: 400px;
       /*  max-width: 80%;
     transform: rotateY(0);*/
 }
 section.about .card .desc{
-    transform: translateX(-500px);
     font-size-adjust: auto;
     opacity: 0;
     min-width: 200px;
     min-height: 150px;
     background: rgba(0,0,0,.1);
-    position: absolute;
     padding: 10px;
-    width: 70%;
+    height: 100%;
+    top:0;
+    z-index: 1000;
+    transform: translate3d(-1500px,0,0);
+    transition: transform 1.2s, opacity 1.2s;
     white-space: normal;
+}
+section.about .card .img{
+    width: 100%;
+    background-position: cover;
+    position: relative;
+    opacity: 0.8;
 }
 section.about .card .img, .desc{
      display: block;
