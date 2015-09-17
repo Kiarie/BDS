@@ -52,15 +52,15 @@ h1.bracket{
     font-family: Gudea, Arial, sans-serif,serif;
 }
 nav.top{
+    display: block;
     width: 100%;
     position: fixed;
     top: 0;
     height: 60px;
     padding: 10px;
     line-height: 1.5em;
-    background: rgba(116,190,225,1);
-    border-bottom: 0.5px solid #e5e5e5;
-    color: #FBFBFB;
+    border-top: 3px solid red;
+    border-bottom: 2px solid #e5e5e5;
     vertical-align: top;
 
 }
@@ -70,6 +70,8 @@ nav a{
     width:80px;
     padding: 10px;
     margin: 0 10px;
+    text-decoration: none;
+    color: black;
 }
 nav img{
     height: 70px;
@@ -306,7 +308,7 @@ section.services .plan
     letter-spacing: 0;
     white-space: normal;
     text-align: center;
-    tranform:scale(0);
+    transform:scale(1);
    
 }
 
@@ -337,7 +339,7 @@ section.services price{
 }
 
 section.services .item-list{
-    color:#4a5863;
+    color: #80909C;
     font-family:fantasy;
     font-size: 12px;
     margin-bottom: 20px;
@@ -427,20 +429,22 @@ section.about h2{
     color: black;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .1em;
-    font-size: 1.17em;
-    font-family: sans-serif;
+    letter-spacing: .051em;
+    font-size: 1.37em;
+    font-family: Calibri, sans-serif;
 }
 section.about .card{
     display: inline-block;
     vertical-align: top;
-    background: rgba(208,245,245,.4);
-    min-height: 250px;
+    background: transparent;
     margin: 10px 10px;
     padding: 20px 10px 35px;
     min-height: 300px;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0, 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
       /*  max-width: 80%;
     transform: rotateY(0);*/
 }
@@ -550,6 +554,8 @@ section.contact h2
     letter-spacing: .2em;
     font-size: 15px;
     font-family: sans-serif;
+    margin-top: 0;
+    padding-top: 0.83em;
 }
 
 section.contact h3
@@ -797,7 +803,9 @@ is-visible .modal-anim-three
         width: 100%;
         position: relative;
      }
-     nav a{width: auto;}
+     nav a{width: auto;
+
+        }
      nav img{height: 60px; width:auto;}
     
     h1 {font-size: 30px;}

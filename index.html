@@ -152,8 +152,8 @@
 
             <p>Our target demographic:<br>
             Companies and individuals seeking web and applications development as well as production services such as documentaries, video shoots, photography and graphics design and animation</p>
-            
-                <a href="team.html" class= "button-blue meet">MEET THE TEAM</a>
+            <div class="space"></div>
+                <a href="team.html#meet" class= "button-blue meet">MEET THE TEAM</a>
            
 
         </section>
@@ -168,23 +168,39 @@
                 <p>Expect a response soon</p>
             </div>
             
-            <form action="bin/message.php", method="post">
+            <form name="contactForm" action="bin/message.php", method="post">
                 <input type="text" name="fname" id="fname" style="display:none">
                 <fieldset>
                     <label for>Full Name</label>
-                    <input name="name" type="text" placeholder="Full Name">
+                    <input name="name" type="text" placeholder="Full Name" required>
                     <label for>Email</label>
-                    <input name="email" type="text" placeholder="Email" autocomplete="off">
+                    <input name="email" type="text" placeholder="Email" autocomplete="off" required>
                     <label for>Phone</label>
                     <input name="phone" class="phoneInput" type="text" placeholder="Phone" autocomplete="off">
+                    <label for>Subject</label>
+                    <input name="subject" type="text" placeholder="Subject" autocomplete="off" required>
                     <label for>Message or Project Description</label>
-                    <textarea name="projectType" type="text" placeholder="Message or project description" rows="1" cols="auto"></textarea>
+                    <textarea name="projectType" type="text" placeholder="Message or project description" rows="1" cols="auto" required></textarea>
                 </fieldset>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onsubmit="return validateForm()">
             </form>
             <h3>Be in touch.</h3>
             <p class="contact-email">hello@bracketdigitalsolutions.net</p>
         </section>
+        <script>
+    function validateForm(){
+    var name = document.forms["contactForm"]["name"].value;
+    var email =document.forms["contactForm"]["email"].value;
+    var subject =document.forms["contactForm"]["subject"].value ;
+    var phone = document.forms["contactForm"]["phone"].value;
+
+    if (!name.test(/^[a-z][A-Z]i/)){
+        alert("Please fill Name in Correct Format");
+        return false;
+        }
+
+    }
+        </script>
 
 	</body>
 </html>

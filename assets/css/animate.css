@@ -48,4 +48,5 @@ section.about .desc:hover{
 }
  section.services .plan:hover{
  	transform:scale(1.25);
+ 	color: black;
  }
