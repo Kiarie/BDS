@@ -172,35 +172,20 @@
                 <input type="text" name="fname" id="fname" style="display:none">
                 <fieldset>
                     <label for>Full Name</label>
-                    <input name="name" type="text" placeholder="Full Name" required>
+                    <input name="name" type="text" id="nameInput" placeholder="Full Name" required>
                     <label for>Email</label>
-                    <input name="email" type="text" placeholder="Email" autocomplete="off" required>
+                    <input name="email" type="email" id="emailInput" placeholder="Email" autocomplete="off" required placeholder="Enter correct Email">
                     <label for>Phone</label>
-                    <input name="phone" class="phoneInput" type="text" placeholder="Phone" autocomplete="off">
+                    <input name="phone" class="phoneInput" id="telInput" type="text" placeholder="Phone" autocomplete="off">
                     <label for>Subject</label>
                     <input name="subject" type="text" placeholder="Subject" autocomplete="off" required>
                     <label for>Message or Project Description</label>
-                    <textarea name="projectType" type="text" placeholder="Message or project description" rows="1" cols="auto" required></textarea>
+                    <textarea name="projectType" type="text" id="messageInput" placeholder="Message or project description" rows="1" cols="auto" required></textarea>
                 </fieldset>
-                <input type="submit" value="Submit" onsubmit="return validateForm()">
+                <input type="submit" value="Submit" onclick="validateForm()">
             </form>
             <h3>Be in touch.</h3>
             <p class="contact-email">hello@bracketdigitalsolutions.net</p>
         </section>
-        <script>
-    function validateForm(){
-    var name = document.forms["contactForm"]["name"].value;
-    var email =document.forms["contactForm"]["email"].value;
-    var subject =document.forms["contactForm"]["subject"].value ;
-    var phone = document.forms["contactForm"]["phone"].value;
-
-    if (!name.test(/^[a-z][A-Z]i/)){
-        alert("Please fill Name in Correct Format");
-        return false;
-        }
-
-    }
-        </script>
-
-	</body>
+ 	</body>
 </html>
