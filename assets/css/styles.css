@@ -521,7 +521,7 @@ section.contact form
     /*position: relative;*/
 }
 
-section.contact input[type=text], textarea
+section.contact input[type=text], input[type=email], textarea
 {
     display: block;
     margin: 11px 0;
