@@ -23,7 +23,7 @@ if(isset($_POST['projectType']) && isset($_POST['email']) && isset($_POST['name'
 if(isset($_POST['projectType']) && isset($_POST['email']) && isset($_POST['name'])){
 	$to= 'operations@bracketDigital.net';
 	$from = htmlspecialchars($_POST['email']);
-	$name = htmlspecialchars($_POST['name']);
+	$sname = htmlspecialchars($_POST['name']);
 	$msg = htmlspecialchars($_POST['projectType']);
 	$subject ='Projects';
 	$froma= preg_match("/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $from);
@@ -44,8 +44,7 @@ class Mydb extends Sqlite3
 	$db = new Mydb();
 
    $sql =<<<TOTO
-   INSERT INTO COMPANY(NAME, EMAIL, SUBJECT, MSGBODY) 
-   VALUES ($name, $froma, $subject, $msg);
+   INSERT INTO COMPANY (NAME, EMAIL, SUBJECT, MSGBODY) VALUES ($sname, $froma, $subject, $msg);
 TOTO;
 
 
